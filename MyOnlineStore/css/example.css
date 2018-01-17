@@ -1,0 +1,28 @@
+#logo img {
+    float: left;
+}
+
+#logo form {
+    float: right;
+    margin: 70px 50px 0 30px;
+}
+
+.navbar {
+    width: 100%;
+    clear: both;
+    margin: 0;
+    background-color: #4f3b3b;
+    padding: 10px 0;
+    
+}
+.navbar ul li {
+    display: inline;
+    color: white;
+    margin: 0;
+    
+}
+
+.navbar ul li a {
+    list-style-type: none;
+    
+}

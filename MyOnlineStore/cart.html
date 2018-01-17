@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>My Online Store</title>
+        
+        <meta charset="UTF-8"> 
+        
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="images/logo%20.png" width="500px" height="200px"></a>
+                
+                <form>
+                    <input type="button" value="LOG IN">
+                    <input type="button" value="SIGN UP">
+                </form>
+            </div>
+            <nav>
+                <ul >
+                    <li><a href="index.html">HOME</a></li>    
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li class="nav-right"><a href="contact.html">CONTACT US</a></li>
+                    <li class="nav-right"><a href="cart.html">MY CART</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        
+        <h1 style="text-align:center"> YOUR CART </h1>
+        
+        <img id="cart" src="images/cart.png" alt="Cart Logo" width="400px" height="300px">
+        
+        <div id="cartlayout">
+            <img src="images/products/ferrero.png">
+            <div id="desc">
+                <h2>Ferrero Rocher</h2>
+                <h4>Description :</h4>
+                <ul>
+                    <li>Pack of 16</li>
+                    <li>Milk Chocolate with Crispy wafor Outside</li>
+                    <li>Cash on Delivery - <em>Available</em></li>
+                </ul>
+                
+                <small>Please Select the Quantity</small> <br>
+                <small><b>Quantity:</b> </small>    
+                <select id="quan">
+                    <option value = 1 selected="selected">1</option>    
+                    <option value = 2>2</option>
+                    <option value = 3>3</option>
+                    <option value = 4>4</option>
+                    <option value = 5>5</option>
+                </select>
+                <button id="getvalue" onclick="netprice();">Proceed</button>
+            </div>
+            <!-- script for totoal amount calculator -->
+            <script>  
+            function netprice()
+                {
+                    var x = document.getElementById("quan").value;
+                    var res= 450 * x;
+                    var amount = document.getElementById("netamount");
+                    amount.innerHTML = res;
+                }
+                </script>  
+            
+            <!-- End of Script -->
+        
+            <h1>Price: Rs <span id="netamount"></span></h1>
+            
+            <form>
+                    <a onclick="alert('Redirecting to Payement Gateway')"><img src="images/buybutton.png"></a>
+                </form>
+            
+        </div>
+        <br>
+        
+        <div id="cartlayout1">
+            <img src="images/products/headphones.png">
+            <div id="desc">
+                <h2>Beats Headhones</h2>
+                <h4>Description :</h4>
+                <ul>
+                    <li>Powered by Dr.Dre</li>
+                    <li>Best sound Quality and Bass </li>
+                    <li>Cash on Delivery - <em>Available</em></li>
+                </ul>
+                
+                <small>Please Select the Quantity</small> <br>
+                <small><b>Quantity:</b> </small>    
+                <select id="quan1">
+                    <option value = 1 selected="selected">1</option>    
+                    <option value = 2>2</option>
+                    <option value = 3>3</option>
+                    <option value = 4>4</option>
+                    <option value = 5>5</option>
+                </select>
+                <button id="getvalue" onclick="netprice1();">Proceed</button>
+            </div>
+            <!-- script for total amount calculator -->
+            <script>  
+            function netprice1()
+                {
+                    var x = document.getElementById("quan1").value;
+                    var res= 21999 * x;
+                    var amount = document.getElementById("netamount1");
+                    amount.innerHTML = res;
+                }
+                </script>  
+            
+            <!-- End of Script -->
+        
+            <h1>Price: Rs <span id="netamount1"></span></h1>
+            
+            <form>
+                    <a onclick="alert('Redirecting to Payement Gateway')"><img src="images/buybutton.png"></a>
+                </form>
+            
+        </div>
+    
+    
+        
+    
+      <footer>
+            <h4> &copy; Shantanu CREATIONS | EICapitan</h4>
+            <h4>2017</h4>
+            <div id="footer">
+            <a href="https://www.facebook.com/EI.Capitan.Shanu" target="_blank"><img src="images/fb.png"></a>
+            <a href="https://www.instagram.com/_shantanu_gupta/" target="_blank"><img src="images/instagram.png" height = "62" width = "64"></a>
+            <a href="https://plus.google.com/u/0/114531763141924410512" target="_blank"><img src="images/gplus.png"></a>
+			<a href="https://www.snapchat.com/add/shanu2010" target="_blank"><img src="images/snapchat.png" height = "62" width = "64"></a>
+            </div>
+            
+        </footer>
+    </body>
+</html>
+
+
